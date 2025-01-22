@@ -38,6 +38,5 @@ eles
     player:Kick(เช็คคีดิมาจาตาลป่าว)
     end
 end)
-
 wait(0.8
 
