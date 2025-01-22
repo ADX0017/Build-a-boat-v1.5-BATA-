@@ -1,3 +1,13 @@
+local Players = game:GetService("Players")
+local requiredKey = "Tester-001,ownner-1"
+
+Players.PlayerAdded:Connect(function(player)
+    if _G.Key ~= requiredKey then
+        player:Kick(เช็คคีดิมาจาตาลป่าว)
+    end
+end)
+
+
 local TweenService = game:GetService("TweenService")
 local player = game.Players.LocalPlayer
 local flightTime = 40
