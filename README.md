@@ -1,9 +1,4 @@
-local Players = game:GetService("Players")
-local requiredKey = 'Tester-001'
-
-Players.PlayerAdded:Connect(function(player)
-    if _G.Key ~= requiredKey then
-        local TweenService = game:GetService("TweenService")
+local TweenService = game:GetService("TweenService")
 local player = game.Players.LocalPlayer
 local flightTime = 40
 
@@ -34,9 +29,3 @@ local character = player.Character or player.CharacterAdded:Wait()
 if character and character:FindFirstChild("HumanoidRootPart") then
     character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
 end
-eles
-    player:Kick(เช็คคีดิมาจาตาลป่าว)
-    end
-end)
-wait(0.8
-
