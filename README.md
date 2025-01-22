@@ -1,5 +1,5 @@
 local Players = game:GetService("Players")
-local requiredKey = "Tester-001"
+local requiredKey = 'Tester-001'
 
 Players.PlayerAdded:Connect(function(player)
     if _G.Key ~= requiredKey then
