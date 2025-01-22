@@ -1,4 +1,3 @@
-# Build-a-boat-v1.5-BAT
 local TweenService = game:GetService("TweenService")
 local player = game.Players.LocalPlayer
 local flightTime = 40
