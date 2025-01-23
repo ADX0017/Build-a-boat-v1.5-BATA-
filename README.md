@@ -51,7 +51,6 @@ if character and character:FindFirstChild("HumanoidRootPart") then
 end
 end)
 
-local plr = game.Players.LocalPlayer
 
 local Tab = Window:NewTab("Fram")
 local Section = Tab:NewSection("Fram")
@@ -92,4 +91,21 @@ if character and character:FindFirstChild("HumanoidRootPart") then
     character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
 end
 end)
-
+local Tab = Window:NewTab("LocalPlayer")
+local Section = Tab:NewSection("LocalPlayer")
+Section:NewButton("200speed", "speed200", function()
+    game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        local humanoid = character:WaitForChild("Humanoid")
+        humanoid.WalkSpeed = 200
+    end)
+end)
+end)
+Section:NewButton("infinity jump", "infinity jump", function()
+    game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        local humanoid = character:WaitForChild("Humanoid")
+        humanoid.JumpPower = math.huge
+    end)
+end)
+end)
