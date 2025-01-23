@@ -62,7 +62,7 @@ local Section = Tab:NewSection("Click to Fram")
 Section:NewButton("fram", "fram", function()
     local TweenService = game:GetService("TweenService")
 local player = game.Players.LocalPlayer
-local flightTime = 45
+local flightTime = 25
 
 local function flyToPosition(targetPosition)
     if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
@@ -75,8 +75,8 @@ local function flyToPosition(targetPosition)
 end
 
 
-local startPosition = Vector3.new(-68.53434753417969, 92.35619354248047, -272.0222473144531)
-local endPosition = Vector3.new(-55.7065125, 80.739624, 8492.35645, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local startPosition = Vector3.new(-68.53434753417969, 120.35619354248047, -272.0222473144531)
+local endPosition = Vector3.new(-55.7065125, 120.739624, 8492.35645, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 
 if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
     player.Character.HumanoidRootPart.CFrame = CFrame.new(startPosition)
