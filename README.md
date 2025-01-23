@@ -92,3 +92,4 @@ if character and character:FindFirstChild("HumanoidRootPart") then
     character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
 end
 end)
+
